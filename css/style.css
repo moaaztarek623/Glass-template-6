@@ -120,6 +120,9 @@ nav ul li a:hover {
     -moz-transition: 0s !important;
     -ms-transition: 0s !important;
     -o-transition: 0s !important;
+    display: block;
+    opacity: 1;
+    position: relative;
   }
   nav ul {
     display: flex !important;
@@ -149,9 +152,7 @@ nav ul li a:hover {
     font-family: var(--fa-style-family-classic);
   }
   .form:checked + ul li {
-    display: block;
-    opacity: 1;
-    position: relative;
+
     top: 0;
   }
   .form:checked + ul {
@@ -159,7 +160,7 @@ nav ul li a:hover {
     opacity: 1;
     display: flex !important;
     flex-direction: column;
-    height: 35vh;
+    min-height: 35vh;
   }
   .glass-text .circle {
     width: 220px !important;
@@ -786,6 +787,9 @@ text-align: center;
   }
 }
 @media (max-width:767px) {
+  .about .icons{
+    width: 100%;
+  }
   .firs{
     margin-right: 0 !important;
   }
@@ -801,6 +805,10 @@ opacity: 0;
   footer .copy span > span{
     padding: 10px;
   }
+  footer .copy .text{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 .fi{
   width: 100% !important;
 }
@@ -809,5 +817,20 @@ opacity: 0;
 }
 .lo{
   width: 100% !important;
+}
+
+.form:checked + ul {
+  transition: all, 0.4s;
+  top: 89px;
+  opacity: 1;
+  display: flex !important;
+  flex-direction: column;
+  min-height: 60vh;
+  -webkit-transition: all, 0.4s;
+  -moz-transition: all, 0.4s;
+  -ms-transition: all, 0.4s;
+  -o-transition: all, 0.4s;
+  animation: h-animate linear alternate 0.3s;
+  -webkit-animation: h-animate linear alternate 0.3s;
 }
 }
