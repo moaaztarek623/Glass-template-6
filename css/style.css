@@ -113,7 +113,6 @@ nav ul li a:hover {
   }
   nav ul li {
     position: absolute;
-    top: 1500px;
     display: none;
     transition: 0s !important;
     -webkit-transition: 0s !important;
@@ -126,17 +125,18 @@ nav ul li a:hover {
   }
   nav ul {
     display: flex !important;
-    background-color: rgba(255, 255, 255, 0.58) !important;
+    background-color: rgba(255, 255, 255, 0.719) !important;
     flex-direction: column;
     flex-wrap: wrap;
-    top: 89px;
+    top: -450%;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 0;
+    height:35vh;
+    overflow: hidden;
   }
   .form:checked {
     transform: rotate(90deg);
@@ -160,7 +160,7 @@ nav ul li a:hover {
     opacity: 1;
     display: flex !important;
     flex-direction: column;
-    min-height: 35vh;
+    height: 35vh;
   }
   .glass-text .circle {
     width: 220px !important;
@@ -833,4 +833,51 @@ opacity: 0;
   animation: h-animate linear alternate 0.3s;
   -webkit-animation: h-animate linear alternate 0.3s;
 }
+}
+.main-title p{
+height: 0;
+overflow: hidden;
+}
+#check-1{
+  display: none;
+}
+.animate{
+  transition: 0.4s !important;
+  animation: an 0.4s both alternate;
+  -webkit-animation: an 0.4s both alternate;
+  -webkit-transition: 0.4s !important;
+  -moz-transition: 0.4s !important;
+  -ms-transition: 0.4s !important;
+  -o-transition: 0.4s !important;
+}
+@keyframes an {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+100%{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+}
+.title.second{
+  padding-right: 0 !important;
+}
+.ask-section .title h1 {
+  width: 100% !important;
+}
+.ourteam-section .about{
+  text-align: center;
+}
+.ourteam-section .about span{
+  width: 100% !important;
+}
+.ourteam-section .icons{
+  width: 100%;
 }
