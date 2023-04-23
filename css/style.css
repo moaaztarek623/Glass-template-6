@@ -128,8 +128,8 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.719) !important;
     flex-direction: column;
     flex-wrap: wrap;
-    top: -450%;
-    left: 50%;
+    top: 90px;
+    left: -100%;
     position: absolute;
     transform: translateX(-50%);
     width: 100%;
@@ -156,11 +156,8 @@ nav ul li a:hover {
     top: 0;
   }
   .form:checked + ul {
-    top: 89px;
-    opacity: 1;
-    display: flex !important;
-    flex-direction: column;
-    height: 35vh;
+    /* top: 89px;*/
+    left: 50%; 
   }
   .glass-text .circle {
     width: 220px !important;
